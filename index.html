@@ -79,16 +79,9 @@
                     <div class="text-center">
                         <h1 class="mb-5 text-5xl text-[#FFF] font-extrabold">End-to-End Travel with <br> <span
                                 class="mb-5 text-[#1DD100]">P Paribahan</span> </h1>
-                        <p class="mb-5 text-[#FFF]">Yes, you can run unit tests and view the results directly within the
-                            app. The <br> integrated testing features allow for a streamlined .</p>
-                        <button class="btn bg-[#1DD100] text-[#030712] font-bold">Buy Tickets</button>
+                        <p class="mb-5 text-[#FFF]">The arrival and departure times mentioned on the ticket are only tentative timings. <br> However the bus will not leave the source before the time that is mentioned on the ticket.</p>
+                        <button class="btn bg-[#1DD100] text-[#030712] font-bold" onclick="scrollToSeatSection()">Buy Tickets</button>
                     </div>
-                    <!-- banner er nicer lika -->
-                    <!-- <div class="relative flex">
-                    <img src="images/people.png" alt="">
-                    <h2>500K+</h2>
-                    <p>Registered users</p>
-                  </div> -->
                 </div>
             </div>
         </section>
@@ -136,8 +129,7 @@
     <main class="">
         <div class="text-center">
             <h2 class="text-[#030712] font-extrabold text-2xl pb-3">P.H Paribahan</h2>
-            <p class="text-[#03071299] font-normal text-base mb-20">Yes, you can run unit tests and view the results
-                directly within the app. The <br> integrated testing features allow for a streamlined .</p>
+            <p class="text-[#03071299] font-normal text-base mb-20">Ticket are only tentative timings the bus will not leave the source before the time <br> that is mentioned on the ticket.</p>
         </div>
         <!-- per seat section start-->
         <section class="container flex mx-auto lg:px-24 mr-5">
@@ -185,7 +177,7 @@
         <section class="container bg-[#FFF] mx-auto lg:px-24 p-8 mr-5">
             <div class="flex">
                 <div>
-                    <h2 class="pb-3">Select Your Seat</h2>
+                    <h2 class="pb-3 seat-section">Select Your Seat</h2>
                     <hr>
                     <div class="flex gap-72 pt-2">
                         <div class="flex gap-1">
@@ -202,7 +194,7 @@
                             <img class="kbd px-6" src="images/tabler-icon-steering-wheel.png" alt="">
                         </div>
                         <div class="grid-container flex gap-9 mt-5">
-                            <div class="grid-item ml-2 pt-3">A</div>
+                            <div class="grid-items ml-2 pt-3">A</div>
                             <div class="grid-item btn px-8">A1</div>
                             <div class="grid-item btn px-8">A2</div>
                             <div class="grid-item btn px-8">A3</div>
@@ -210,7 +202,7 @@
                         </div>
                         <div>
                             <div class="grid-container flex gap-9 mt-5">
-                                <div class="grid-item ml-2 pt-3">B</div>
+                                <div class="grid-items ml-2 pt-3">B</div>
                                 <div class="grid-item btn px-8">B1</div>
                                 <div class="grid-item btn px-8">B2</div>
                                 <div class="grid-item btn px-8">B3</div>
@@ -224,37 +216,37 @@
                     <hr class="mb-5">
                     <div class="bg-[#F7F8F8] rounded-xl">
                         <div class="grid-container pt-5 flex gap-28 mx-5">
-                            <div class="grid-item">Seat</div>
-                            <div class="grid-item">Class</div>
-                            <div class="grid-item">Price</div>
+                            <div class="grid-items">Seat</div>
+                            <div class="grid-items">Class</div>
+                            <div class="grid-items">Price</div>
                         </div>
                         <hr class="mt-4">
                         <div>
                             <div class="grid-container pt-3 flex gap-28 mx-5">
-                                <div class="grid-item">A2</div>
-                                <div class="grid-item">Economoy</div>
-                                <div class="grid-item">550</div>
+                                <div class="grid-items">A2</div>
+                                <div class="grid-items">Economoy</div>
+                                <div class="grid-items">550</div>
                             </div>
                         </div>
                         <div>
                             <div class="grid-container pt-3 flex gap-28 mx-5">
-                                <div class="grid-item">B2</div>
-                                <div class="grid-item">Economoy</div>
-                                <div class="grid-item">550</div>
+                                <div class="grid-items">B2</div>
+                                <div class="grid-items">Economoy</div>
+                                <div class="grid-items">550</div>
                             </div>
                             <hr class="mt-4">
                             <div>
                                 <div class="grid-container pt-3 flex justify-between mx-5">
-                                    <div class="grid-item">Total Price</div>
-                                    <div class="grid-item">BDT 1100</div>
+                                    <div class="grid-items">Total Price</div>
+                                    <div class="grid-items">BDT 1100</div>
                                 </div>
                                 <input type="text" class="grow mx-5 mt-5 pl-10 rounded-lg bg-[#FFF]"
                                     placeholder="Have any coupon?" />
                                 <span class="btn p-4  text-[#FFF] bg-[#1DD100]">Apply</span>
                                 <div>
                                     <div class="grid-container pt-3 flex justify-between mx-5">
-                                        <div class="grid-item">Grand Total</div>
-                                        <div class="grid-item">BDT 1100</div>
+                                        <div class="grid-items">Grand Total</div>
+                                        <div class="grid-items">BDT 1100</div>
                                     </div>
                                 </div>
                             </div>
@@ -273,14 +265,15 @@
                     </div>
                     <div>
                         <div class="grid-container pt-3 flex justify-between mx-5">
-                            <div class="grid-item">Terms and Conditions</div>
-                            <div class="grid-item">Cancellation Policy</div>
+                            <div class="grid-items">Terms and Conditions</div>
+                            <div class="grid-items">Cancellation Policy</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
