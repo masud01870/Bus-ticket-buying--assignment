@@ -1,0 +1,18 @@
+.grid-container {
+        display: flex;
+        gap: 9px;    
+    }
+    .grid-items {
+        margin-left: 2px;
+        padding-top: 3px;
+    }
+    .grid-item {
+        padding: 8px;
+        cursor: pointer;
+    }
+    .result-container {
+        padding-top: 3px;
+        justify-content: space-between;
+        justify-items: center;
+        gap: 28px;    
+    }
